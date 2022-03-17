@@ -9,8 +9,9 @@ def mundo():
 def unifran():
   return '<h2>Universidade de Franca</h2>'
 
-@app.route('/dashboard/<name>/')
+@app.route('/dashboard/<name>')
 def dashboard(name):
   return f'Olá, {name}'
-          
-app.run(host='0.0.0.0', port=8080)
+
+if __name__ == '__main__':
+  app.run(host='0.0.0.0')
